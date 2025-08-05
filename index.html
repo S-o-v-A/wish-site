@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Upon a Star</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Wish Upon a Star ✨</h1>
+            <p class="description">
+                Make your wishes come true! Type your wish below and click on one of the three magical stars.
+                Each star can only grant one wish, so choose wisely. Your wish will be copied to your clipboard
+                automatically when you click a star.
+            </p>
+        </header>
+
+        <main>
+            <div class="wish-input-section">
+                <label for="wishInput">Enter your wish:</label>
+                <textarea id="wishInput" placeholder="Type your heartfelt wish here..." maxlength="500"
+                    rows="4"></textarea>
+                <div class="char-counter">
+                    <span id="charCount">0</span>/500 characters
+                </div>
+            </div>
+
+            <div class="stars-section">
+                <h2>Choose a Star to Make Your Wish</h2>
+                <div class="stars-container">
+                    <div class="star" id="star1" data-star-number="1">
+                        <i class="fas fa-star"></i>
+                        <span class="star-label">Wish #1</span>
+                    </div>
+                    <div class="star" id="star2" data-star-number="2">
+                        <i class="fas fa-star"></i>
+                        <span class="star-label">Wish #2</span>
+                    </div>
+                    <div class="star" id="star3" data-star-number="3">
+                        <i class="fas fa-star"></i>
+                        <span class="star-label">Wish #3</span>
+                    </div>
+                </div>
+                <div id="wishesRemaining" class="wishes-remaining">
+                    You have <span id="remainingCount">3</span> wishes remaining
+                </div>
+            </div>
+
+            <div id="messageArea" class="message-area hidden">
+                <div class="message-content">
+                    <i class="fas fa-check-circle"></i>
+                    <p id="wishMessage"></p>
+                    <small>✅ Copied to clipboard!</small>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <p>✨ May all your wishes come true ✨</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
