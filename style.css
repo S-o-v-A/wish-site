@@ -209,10 +209,18 @@ textarea:focus {
 
 footer {
     text-align: center;
-    margin-top: 40px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.5rem;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
 }
+
+footer1 {
+    text-align: center;
+    margin-top: 6px;
+    color: rgba(255, 238, 155, 0.5);
+    font-size: 0.1rem;
+}
+
 
 /* Star animation effects */
 @keyframes starPulse {
